@@ -1,0 +1,40 @@
+{
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"react/prop-types": "off",
+		"react/display-name": "off",
+		"eqeqeq": ["error", "always", { "null": "ignore" }],
+		"indent": ["error", "tab", { "MemberExpression": "off" }],
+		"no-unused-expressions": "error",
+		"new-cap": "error",
+		"no-nested-ternary": "error",
+		"no-unused-vars": ["error", { "args": "none" }],
+		"no-empty": "off",
+		"no-control-regex": "off",
+		"semi": ["error", "never"],
+		"no-var": "error",
+		"no-template-curly-in-string": "error",
+		"no-nested-ternary": "off",
+		"indent": "off",
+		"no-mixed-spaces-and-tabs": "off",
+		"no-extra-semi": "off",
+		"require-atomic-updates": "off"
+	},
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}

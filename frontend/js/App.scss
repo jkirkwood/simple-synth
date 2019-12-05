@@ -1,0 +1,18 @@
+.App {
+	margin: auto;
+
+	h1 {
+		text-align: center;
+	}
+
+	.WaveSelector {
+		margin-bottom: 10px;
+	}
+
+	.knobs {
+		display: flex;
+		> * {
+			margin-right: 10px;
+		}
+	}
+}

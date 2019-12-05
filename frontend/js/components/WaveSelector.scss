@@ -1,0 +1,28 @@
+.WaveSelector {
+  display: inline-block;
+
+  .label {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  button {
+    border: none;
+    padding: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #ddd;
+    font-size: 12px;
+    margin-right: 4px;
+    transition: color 0.3s, background 0.3s;
+
+    &:hover {
+      background: darken(#ddd, 10%);
+    }
+
+    &.active {
+      background: #47bbfe;
+      color: white;
+    }
+  }
+}

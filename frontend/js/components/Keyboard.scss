@@ -1,0 +1,36 @@
+.Keyboard {
+  $key-size: 50px;
+  $key-spacing: 4px;
+  $black-key-color: #555;
+  $white-key-color: #ddd;
+
+  position: relative;
+  margin-top: $key-size + $key-spacing;
+
+  button {
+    border: none;
+    padding: 5px;
+    width: $key-size;
+    height: $key-size;
+    text-transform: uppercase;
+    background: $white-key-color;
+    margin: $key-spacing / 2;
+    cursor: pointer;
+
+    &.active {
+      background: darken($white-key-color, 10%);
+    }
+
+    &.black {
+      background: $black-key-color;
+      position: absolute;
+      top: -1 * ($key-size + $key-spacing);
+      margin-left: -1 * $key-size / 2;
+      color: white;
+
+      &.active {
+        background: darken($black-key-color, 10%);
+      }
+    }
+  }
+}

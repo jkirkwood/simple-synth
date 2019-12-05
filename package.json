@@ -1,0 +1,35 @@
+{
+  "name": "simple-synth",
+  "version": "1.0.0",
+  "description": "Simple synthesizer with real-time collaboration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel watch frontend/index.html & node index.js",
+    "build": "parcel build frontend/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-plugin-react": "^7.14.3",
+    "nanoevents": "^2.0.0",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "sass": "^1.22.12"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-logger": "^3.2.1",
+    "koa-send": "^5.0.0",
+    "koa-static": "^5.0.0",
+    "ws": "^7.2.0"
+  }
+}

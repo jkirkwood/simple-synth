@@ -1,0 +1,10 @@
+# Parcel build files
+dist
+.cache
+
+# Dependencies
+node_modules
+
+# Text editor files
+*.sublime-workspace
+*.sublime-project
